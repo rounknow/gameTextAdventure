@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Text Game Adventure</title>
+		<link rel="stylesheet" type="text/css" href="css/GameStyle.css">
+		<script type="text/javascript" src="js/SerVivo.js"></script>
+		<script type="text/javascript" src="js/Acao.js"></script>
+		<script type="text/javascript" src="js/Opcao.js"></script>
+		<script type="text/javascript" src="js/Item.js"></script>
+		<script type="text/javascript" src="js/Porta.js"></script>
+		<script type="text/javascript" src="js/Chave.js"></script>
+		<script type="text/javascript" src="js/Busca.js"></script>
+		<script type="text/javascript" src="js/Iventario.js"></script>
+		<script type="text/javascript" src="js/NPC.js"></script>
+		<script type="text/javascript" src="js/Player.js"></script>
+		<script type="text/javascript" src="js/Inimigo.js"></script>
+		<script type="text/javascript" src="js/Sala.js"></script>
+		<script type="text/javascript" src="js/TextGameAdventure.js"></script>
+		<script type="text/javascript" src="js/CarregadorArquivos.js"></script>
+		<script type="text/javascript" src="js/Game.js"></script>
+	</head>
+	<body>
+		<div class="location"><h1><!--Localidade--></h1>
+    		<div class="nav"><!--SAÍDAS:&nbsp;-->
+    			<!--<button type="button">Norte</button>
+    			<button type="button">Nordeste</button>
+    			<button type="button">Leste</button>
+    			<button type="button">Sudeste</button>
+    			<button type="button">Sul</button>
+    			<button type="button">Sudoeste</button>
+    			<button type="button">Oeste</button>
+    			<button type="button">Noroeste</button>-->
+  			</div>
+		</div>
+		<div class="description">
+		    <div class="description-content">
+		        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tincidunt diam quam, sit amet tristique odio scelerisque sit amet. Fusce eu placerat ante.</p>
+		        <p>Nulla dignissim odio ultrices, imperdiet felis vel, viverra augue. Nam congue dolor metus, non congue arcu facilisis vitae. Vivamus quis commodo augue, ut semper augue.</p>
+		        <p>Pellentesque in ipsum ut velit suscipit scelerisque. Etiam iaculis enim sit amet lectus mattis, sit amet tincidunt orci euismod. Morbi bibendum quam a lobortis pretium. Nullam suscipit aliquet mauris, at tempus justo tincidunt quis. Aenean ut lorem sed est elementum viverra quis vitae turpis.</p>
+		        <p>Mauris iaculis, erat a pretium luctus, tortor eros accumsan nisi, at dignissim quam sem id eros. Nam turpis nulla, laoreet nec justo nec, laoreet tempor dui. Aenean mollis libero ut odio placerat faucibus.</p>
+		        <p>Integer vitae <span class="unused">OPÇÃO A</span> sic <button type="button" class="equip">OPÇÃO B</button> ?</p>
+		        <p>▶ OPÇÃO B</p>
+		        <p class="antagonist">Fusce libero sapien, porttitor eu metus vitae, lacinia maximus ante. Sed ultrices pretium neque quis faucibus. Morbi fermentum ipsum at enim venenatis, quis semper eros luctus.</p>
+		        <p class="protagonist">Quisque hendrerit, ex ac tincidunt mattis, urna justo hendrerit velit, vitae ornare sem tortor a ante. Quisque tempor maximus vestibulum. Proin mi tortor, volutpat ut eleifend a, suscipit quis mauris. Vivamus et elementum tortor.</p>
+		        <p>Nulla sollicitudin vestibulum dolor eu bibendum. Mauris sollicitudin ipsum magna, a porttitor enim porttitor mattis. Nam in sem dolor. Sed gravida sodales varius. Nullam accumsan consectetur fermentum.</p>
+		        <p>Duis ex elit, tincidunt ac neque in, viverra dictum nulla. Sed at mi sed turpis tincidunt dictum a eget dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+		        <p>Integer vitae <button type="button">OPÇÃO A</button> sic <button type="button">OPÇÃO B</button> ?</p>
+		    </div>
+		</div>
+		<div class="inventory">Estou carregando:
+		    <ul class="itens">
+		        <li><button type="button">Relógio</button></li>
+		      <li><button type="button">Chave</button></li>
+		      <li><button type="button" class="equip">Revolver</button></li>
+		    </ul>      
+		</div>
+		<div class="interact">Eu posso ver:
+		    <ul class="objects">
+		      <li>escrivaniha
+		        <button type="button">OLHAR</button>
+		      </li>
+		      <li>fichário aberto [sobre a escrivaninha]
+		        <button type="button">OLHAR</button>
+		        <button type="button">FECHAR</button>
+		      </li>
+		      <li>estante de livros
+		        <button type="button">OLHAR</button>
+		      </li>
+		      <li>livro intitulado “O oculto” [na estante de livros]
+		        <button type="button">PEGAR</button>
+		      </li>
+		    </ul>
+		    <div class="hand">Estou segurando: <span class="strong">REVOLVER</span>
+		        <button type="button">DEIXAR</button>
+		        <button type="button">ATIRAR</button>
+		        <button type="button">RECARREGAR</button>        
+		    </div>
+		  </div>
+	</body>
+</html>
